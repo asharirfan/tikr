@@ -1,10 +1,10 @@
 {
-  "name": "tiikr",
+  "name": "tikr-cli",
   "version": "0.0.1",
   "description": "A beautiful Pomodoro & countdown timer, right in your terminal",
   "type": "module",
   "bin": {
-    "tiikr": "./dist/index.js"
+    "tikr": "./dist/index.js"
   },
   "scripts": {
     "dev": "tsup --watch",
@@ -24,9 +24,9 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/asharirfan/tiikr.git"
+    "url": "https://github.com/asharirfan/tikr.git"
   },
-  "homepage": "https://github.com/asharirfan/tiikr#readme",
+  "homepage": "https://github.com/asharirfan/tikr#readme",
   "dependencies": {
     "@clack/prompts": "^0.9.1",
     "commander": "^12.1.0",

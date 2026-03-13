@@ -1,1 +1,1 @@
-export const CLI_NAME = 'tiikr'
+export const CLI_NAME = 'tikr'
