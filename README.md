@@ -1,3 +1,5 @@
+![tikr cover](./assets/cover.jpg)
+
 # tikr
 
 A beautiful Pomodoro & countdown timer, right in your terminal.
@@ -170,4 +172,4 @@ pnpm build
 
 ## License
 
-MIT © [Your Name](https://github.com/yourusername) built with [Command Code](https://commandcode.ai).
+Apache-2.0 © [Ashar Irfan](https://x.com/MrAsharIrfan) built with [Command Code](https://commandcode.ai).
