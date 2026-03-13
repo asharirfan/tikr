@@ -1,6 +1,6 @@
 {
   "name": "tikr-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A beautiful Pomodoro & countdown timer, right in your terminal",
   "type": "module",
   "bin": {
