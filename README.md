@@ -1,4 +1,4 @@
-![tikr cover](./assets/cover.jpg)
+![tikr cover](./assets/cover-tikr.jpg)
 
 # tikr
 
