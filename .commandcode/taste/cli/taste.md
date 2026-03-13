@@ -22,3 +22,4 @@
 - Use minimal white, gray, and black colors for ASCII art banners. Confidence: 0.85
 - When a CLI is invoked with no subcommand, show an interactive clack select menu instead of the help text. Confidence: 0.85
 - Use homedir() from Node's os module for cross-platform file storage paths instead of platform-specific env vars like %APPDATA%. Confidence: 0.65
+- In README install sections, show npx (run instantly) first, then global install with `npm i -g`. Confidence: 0.65

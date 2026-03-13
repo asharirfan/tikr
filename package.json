@@ -12,6 +12,13 @@
     "test": "vitest",
     "start": "node dist/index.js"
   },
+  "author": "Ashar Irfan",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asharirfan/tikr.git"
+  },
+  "homepage": "https://github.com/asharirfan/tikr#readme",
   "dependencies": {
     "@clack/prompts": "^0.9.1",
     "commander": "^12.1.0",
