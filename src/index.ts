@@ -6,6 +6,7 @@ import { runStart } from './commands/start.js';
 import { runBreak } from './commands/break.js';
 import { runHistory } from './commands/history.js';
 import { printBanner } from './ui/banner.js';
+import { CLI_NAME } from './constants.js';
 
 const require = createRequire(import.meta.url);
 const { version } = require('../package.json') as { version: string };
@@ -13,7 +14,7 @@ const { version } = require('../package.json') as { version: string };
 const program = new Command();
 
 program
-  .name('tikr')
+  .name(CLI_NAME)
   .description('A beautiful Pomodoro & countdown timer, right in your terminal')
   .version(version, '-v, --version', 'Show current version')
   .helpOption('-h, --help', 'Show help');

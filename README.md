@@ -1,6 +1,6 @@
-![tikr cover](./assets/cover.jpg)
+![tiikr cover](./assets/cover.jpg)
 
-# tikr
+# tiikr
 
 A beautiful Pomodoro & countdown timer, right in your terminal.
 
@@ -11,7 +11,7 @@ A beautiful Pomodoro & countdown timer, right in your terminal.
 - **Interactive menu** — pick a session type without memorizing commands.
 - **ASCII progress bar** — live visual countdown with pause and reset controls.
 - **Desktop notifications** — alerts you when time is up.
-- **Session history** — completed sessions logged to `~/.tikr/history.json`.
+- **Session history** — completed sessions logged to `~/.tiikr/history.json`.
 - **Colorized output** — clean, readable terminal UI.
 
 ## Install
@@ -19,13 +19,13 @@ A beautiful Pomodoro & countdown timer, right in your terminal.
 Run instantly:
 
 ```bash
-npx tikr
+npx tiikr
 ```
 
 Or install globally:
 
 ```bash
-npm i -g tikr
+npm i -g tiikr
 ```
 
 **Requirements:** Node.js >= 18
@@ -34,26 +34,26 @@ npm i -g tikr
 
 ```bash
 # Launch the interactive menu
-tikr
+tiikr
 
 # Start a 25-min Pomodoro session
-tikr pomodoro
+tiikr pomodoro
 
 # Run a custom countdown
-tikr start --minutes 45 --label "Deep work"
+tiikr start --minutes 45 --label "Deep work"
 
 # Take a short or long break
-tikr break
-tikr break --long
+tiikr break
+tiikr break --long
 
 # View session history
-tikr history --today
+tiikr history --today
 ```
 
 ## CLI Reference
 
 ```text
-Usage: tikr [options] [command]
+Usage: tiikr [options] [command]
 
 A beautiful Pomodoro & countdown timer, right in your terminal
 
@@ -126,7 +126,7 @@ While a timer is running:
 
 ## Session Log
 
-Completed sessions are saved to `~/.tikr/history.json`:
+Completed sessions are saved to `~/.tiikr/history.json`:
 
 ```json
 [

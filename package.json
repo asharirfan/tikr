@@ -1,10 +1,10 @@
 {
-  "name": "tikr",
+  "name": "tiikr",
   "version": "0.0.1",
   "description": "A beautiful Pomodoro & countdown timer, right in your terminal",
   "type": "module",
   "bin": {
-    "tikr": "./dist/index.js"
+    "tiikr": "./dist/index.js"
   },
   "scripts": {
     "dev": "tsup --watch",
@@ -12,7 +12,7 @@
     "test": "vitest",
     "start": "node dist/index.js",
     "link": "pnpm link --global",
-    "prepublishOnly": "pnpm test && pnpm build",
+    "prepublishOnly": "vitest run && pnpm build",
     "publish:npm": "pnpm run prepublishOnly && pnpm publish",
     "publish:npm:dry-run": "pnpm run prepublishOnly && pnpm publish --dry-run",
     "release:major": "node scripts/release.mjs major",
@@ -24,9 +24,9 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/asharirfan/tikr.git"
+    "url": "https://github.com/asharirfan/tiikr.git"
   },
-  "homepage": "https://github.com/asharirfan/tikr#readme",
+  "homepage": "https://github.com/asharirfan/tiikr#readme",
   "dependencies": {
     "@clack/prompts": "^0.9.1",
     "commander": "^12.1.0",

@@ -2,8 +2,9 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { homedir } from 'os';
 import { join } from 'path';
 import type { Session } from '../types.js';
+import { CLI_NAME } from '../constants.js';
 
-const HISTORY_DIR = join(homedir(), '.tikr');
+const HISTORY_DIR = join(homedir(), `.${CLI_NAME}`);
 const HISTORY_FILE = join(HISTORY_DIR, 'history.json');
 
 function ensureDir(): void {
