@@ -13,7 +13,7 @@
     "start": "node dist/index.js",
     "link": "pnpm link --global",
     "prepublishOnly": "vitest run && pnpm build",
-    "publish:npm": "pnpm run prepublishOnly && pnpm publish",
+    "publish:npm": "pnpm run prepublishOnly && pnpm publish --access=public",
     "publish:npm:dry-run": "pnpm run prepublishOnly && pnpm publish --dry-run",
     "release:major": "node scripts/release.mjs major",
     "release:minor": "node scripts/release.mjs minor",
