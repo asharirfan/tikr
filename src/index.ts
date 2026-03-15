@@ -8,6 +8,11 @@ import { runHistory } from './commands/history.js';
 import { printBanner } from './ui/banner.js';
 import { CLI_NAME } from './constants.js';
 
+import { runConfig } from './commands/config.js';
+import { runPresets } from './commands/presets.js';
+import { runPreset } from './lib/runPreset.js';
+import type { PresetName } from './types.js';
+
 const require = createRequire(import.meta.url);
 const { version } = require('../package.json') as { version: string };
 
@@ -74,6 +79,41 @@ program
   .action(async (opts: { today: boolean; clear: boolean }) => {
     await runHistory({ today: opts.today, clear: opts.clear });
   });
+
+program
+  .command('config')
+  .description('Manage presets (list, set, delete)')
+  .option('--label <name>', 'Preset name (e.g. study)')
+  .option('--minutes <number>', 'Duration in minutes', parseInt)
+  .option('--delete', 'Delete preset', false)
+  .option('-q, --quiet', 'Suppress all output except timer', false)
+  .option('--no-notify', 'Disable notification')
+  .option('--no-sound', 'Disable sound')
+  .action(async (opts) => {
+    await runConfig({
+      label: opts.label,
+      minutes: opts.minutes,
+      delete: opts.delete,
+      quiet: opts.quiet,
+      notify: opts.notify,
+      sound: opts.sound
+    });
+  });
+
+program
+  .command('presets')
+  .description('Select and start a preset timer')
+  .option('-q, --quiet', 'Suppress all output except timer', false)
+  .option('--no-notify', 'Disable notification')
+  .option('--no-sound', 'Disable sound')
+  .action(async (opts) => {
+    await runPresets({
+      quiet: opts.quiet,
+      notify: opts.notify !== false,
+      sound: opts.sound !== false
+    });
+  });
+
 
 program.action(async () => {
   printBanner();
