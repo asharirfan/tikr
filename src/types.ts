@@ -15,3 +15,11 @@ export interface TimerOptions {
   sound: boolean;
   quiet: boolean;
 }
+
+export interface Preset {
+  label: string;
+  minutes: number;
+}
+
+export type PresetName = string; // e.g. 'study'
+
